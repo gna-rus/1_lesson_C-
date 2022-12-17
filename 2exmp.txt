@@ -1,0 +1,34 @@
+
+using System;
+class HelloWorld
+{
+    static void Main()
+    {
+
+        //Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+        //a = 5; b = 7 -> max = 7
+        //a = 2 b = 10 -> max = 10
+        //a = -9 b = -3 -> max = -3
+        Console.WriteLine("Пожалуйства, введите число А"); // блок ввода числа А
+        string A = Console.ReadLine() ?? "";
+        int NumberFromA = int.Parse(A);
+
+        Console.WriteLine("Пожалуйства, введите число В"); // блок ввода числа В
+        string B = Console.ReadLine() ?? "";
+        int NumberFromB = int.Parse(B);
+
+        if (NumberFromA > NumberFromA)
+        { //блок сравнения А с В и вывода
+            Console.WriteLine("Число А больше числа В");
+        }
+        else
+        {
+            Console.WriteLine("Число В больше числа А");
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+using System;
+class HelloWorld
+{
+    static void Main()
+    {
+        //Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+        //2, 3, 7 -> 7
+        //44 5 78 -> 78
+        //22 3 9 -> 22
+
+        Console.WriteLine("Пожалуйства, введите число А, В, С"); // блок ввода чисел
+        string A = Console.ReadLine() ?? "";
+        string B = Console.ReadLine() ?? "";
+        string C = Console.ReadLine() ?? "";
+
+        int NumberFromA = int.Parse(A);
+        int NumberFromB = int.Parse(B);
+        int NumberFromC = int.Parse(C);
+
+        int MaxNum = NumberFromA; //присваивание 1го введеного числа условие что оно максимальное
+
+        if (MaxNum < NumberFromB)
+        {// проверка, число В больше или нет макисмального
+            MaxNum = NumberFromB; // если да, то В становится максимальным
+        }
+
+        if (MaxNum < NumberFromC)
+        {// проверка, число С больше или нет максимального
+            MaxNum = NumberFromC; //если да, то С становится максимальным
+        }
+        Console.WriteLine(MaxNum);
+    }
+}
